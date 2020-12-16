@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Beograd</title>
+    <link rel="stylesheet" href="stylePocetna.css">
+    <link rel="stylesheet" href="styleKuvari.css">
+    <link rel="stylesheet" href="styleMeniJelovnik.css">
+    <link rel="stylesheet" href="styleONama.css">
+    <link rel="stylesheet" href="styleTestimonials.css">
+    <link rel="stylesheet" href="styleContact.css">
+    
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>estoran</a>
+        <ul class="navigation">
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="Onama.html">O nama</a></li>
+            <li><a href="Meni.html">Meni</a></li>
+            <li><a href="Kuvari.html">Kuvari</a></li>
+            <li><a href="NasRad.html">Naš rad</a></li>
+            <li><a href="KOntakt.html">Kontakt</a></li>
+            <li><a href="#about">↓</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Najbolja hrana u gradu</h2>
+            <p class="element"></p>
+            <script type="text/javascript" src="typed.js"></script>
+            <script>var typed = new Typed('.element', {
+                strings: ['U nasem restoranu imacete priliku da okusite najraznovrsnije specijalitete sa nasih prostora!', 'U nasem restoranu imacete priliku da okusite najraznovrsnije specijalitete sa nasih prostora!'],
+                typeSpeed: 60,
+                backSpeed: 60,
+                loop: true
+              });
+              
+              </script>
+            <a href="#" class="btn">Meni
+            </a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>O</span> nama</h2><br>
+                <p>U samom centru grada, davne 1952. godine na tadasnjem Avalskom drumu otvoren je danas legendarni restoran Beograd kao uporiste putnika i svih ljubitelja dobrog zalogaja.Od tada se u restoranu Beograd mnogo pojelo i popilo...Mnoge price su ispricane, brojna slavlja odrzana...Smenjivali su se gosti i menjali obicaji, ali je pravilo ostalo isto: U restoran Beograd se uvek vraca.
+
+                    Kao sjajan spoj tradicionalnog i savremenog, restoran Beograd predstavlja omiljenu destinaciju poklonika kulta ukusne hrane. Predivna stara kuca na cosku, obnovljena i opremljena po najsavremenijim ugostiteljskim standardima, zadrzala je svoju vizuelnu autenticnost. Topla domacinska atmosfera i ljubazno i predusretljivo osoblje, uvesce vas u neki drugi svet u kome nema zurbe i meteza svakodnevnice. Svet u kome je sve podredjeno uzivanju u ukusima i mirisima balkanskih specijaliteta.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="img1.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header=document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY>0);
+        });
+        </script>

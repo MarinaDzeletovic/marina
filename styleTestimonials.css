@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.testimonials{
+    background: url(bg2.jpg);
+    background-size: cover;
+}
+.white .title,
+.white p
+{
+color: #fff;
+}
+.white .title span{
+color: burlywood;
+font-size: 2em;
+}
+
+.testimonials .content
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.testimonials .content .box
+{
+    width: 340px;
+    padding: 40px;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonials .content .box .imgBx{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonials .content .box .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonials .content .box .text{
+    text-align: center;
+}
+.testimonials .content .box .text p{
+color: burlywood;
+font-style: italic;
+}
+.testimonials .content .box .text h3
+{
+    margin-top: 20px;
+    color: #111;
+    font-size: 1em;
+    color: burlywood;
+    font-weight: 600;
+}

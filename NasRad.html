@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Beograd</title>
+    <link rel="stylesheet" href="stylePocetna.css">
+    <link rel="stylesheet" href="styleKuvari.css">
+    <link rel="stylesheet" href="styleMeniJelovnik.css">
+    <link rel="stylesheet" href="styleONama.css">
+    <link rel="stylesheet" href="styleTestimonials.css">
+    <link rel="stylesheet" href="styleContact.css">
+    
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>estoran</a>
+        <ul class="navigation">
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="Onama.html">O nama</a></li>
+            <li><a href="Meni.html">Meni</a></li>
+            <li><a href="Kuvari.html">Kuvari</a></li>
+            <li><a href="NasRad.html">Naš rad</a></li>
+            <li><a href="KOntakt.html">Kontakt</a></li>
+            <li><a href="#testimonials">↓</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Najbolja hrana u gradu</h2>
+            <p class="element"></p>
+            <script type="text/javascript" src="typed.js"></script>
+            <script>var typed = new Typed('.element', {
+                strings: ['U nasem restoranu imacete priliku da okusite najraznovrsnije specijalitete sa nasih prostora!', 'U nasem restoranu imacete priliku da okusite najraznovrsnije specijalitete sa nasih prostora!'],
+                typeSpeed: 60,
+                backSpeed: 60,
+                loop: true
+              });
+              
+              </script>
+            <a href="#" class="btn">Meni
+            </a>
+        </div>
+    </section>
+    <section class="testimonials" id="testimonials">
+        <div class="white">
+            <h2 class="title"><span>U</span>tisci</h2>
+            <p>Ovo su utisci nasih dugogodisnjih posetilaca: </p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="savaKuvar.jpg">
+                </div>
+                <div class="text">
+                    <p>Uvek uzivam u vasoj hrani, prijatnoj atmosferi i nasmejanom osoblju! Uvek izadjem punog stomaka i rado se vracam...</p>
+                    <h3>Neko poznat</h3>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="imgBx">
+                    <img src="testi2.jpg">
+                </div>
+                <div class="text">
+                    <p>Ovo je jedan od mojih najomiljenijih restorana i uvek ga preporucim dragim osobama jer znam da se sigurno nece pokajati!</p>
+                    <h3>Neko poznat</h3>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="imgBx">
+                    <img src="Marina.jpg">
+                </div>
+                <div class="text">
+                    <p>Ovde se uvek osecam kao kod kuce! Ne bih mogla da nadjem nijednu zamerku ovoj divnoj zajednici...</p>
+                    <h3>Neko poznat</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header=document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY>0);
+        });
+        </script>

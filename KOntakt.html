@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Beograd</title>
+    <link rel="stylesheet" href="stylePocetna.css">
+    <link rel="stylesheet" href="styleKuvari.css">
+    <link rel="stylesheet" href="styleMeniJelovnik.css">
+    <link rel="stylesheet" href="styleONama.css">
+    <link rel="stylesheet" href="styleTestimonials.css">
+    <link rel="stylesheet" href="styleContact.css">
+    
+    
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>R</span>estoran</a>
+        <ul class="navigation">
+            <li><a href="index.html">Pocetna</a></li>
+            <li><a href="Onama.html">O nama</a></li>
+            <li><a href="Meni.html">Meni</a></li>
+            <li><a href="Kuvari.html">Kuvari</a></li>
+            <li><a href="NasRad.html">Naš rad</a></li>
+            <li><a href="KOntakt.html">Kontakt</a></li>
+            <li><a href="#contact">↓</a></li>
+        </ul>
+    </header>
+
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Najbolja hrana u gradu</h2>
+            <p class="element"></p>
+            <script type="text/javascript" src="typed.js"></script>
+            <script>var typed = new Typed('.element', {
+                strings: ['U nasem restoranu imacete priliku da okusite najraznovrsnije specijalitete sa nasih prostora!', 'U nasem restoranu imacete priliku da okusite najraznovrsnije specijalitete sa nasih prostora!'],
+                typeSpeed: 60,
+                backSpeed: 60,
+                loop: true
+          });
+              
+              </script>
+            <a href="#" class="btn">Meni
+            </a>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+
+
+
+        <div class="title">
+            <h2 class="titleText">
+                <span>K</span>ontakt
+            </h2>
+            <p>Za bilo kakva pitanja ili rezervacije, posaljite nam poruku i odgovaramo u najkracem roku!</p>
+           <form>
+            <div class="contactForm">
+                <h3>Pošaljite poruku</h3>
+                <div class="inputBox">
+                    <input type="text" placeholder="Ime" required>
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email" placeholder="e-mail" required="required">
+                </div>
+                <div class="inputBox">
+                    <textarea placeholder="Tekst poruke" required></textarea>
+                    </div>
+                    <div class="inputBox">
+                  <input type="submit" value="Posalji" onclick="window.location.reload();alert('Vasa poruka je poslata!')">
+                    </div>
+                  
+                 
+                  
+                </div>
+            </form>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header=document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY>0);
+
+            
+        });
+        
+
+        </script>
+        
